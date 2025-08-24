@@ -20,8 +20,17 @@ document.getElementById('loginButton').addEventListener('click', function (e) {
     if (mobileNumberValueConverted === mobileNumber && pinNumberValueConverted === pinNumber) {
         window.location.href="./home.html"  
     }
+
+
+    else if (mobileNumberValueConverted !== mobileNumber || pinNumberValueConverted === pinNumber) {
+        alert('Write Your Mobile Number')
+    }
+
+    else if (mobileNumberValueConverted === mobileNumber || pinNumberValueConverted !== pinNumber) {
+        alert('Write your Pin Number')
+    }
+
     else {
         alert('Invalid cradentials')
-        
     }
 })
