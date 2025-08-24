@@ -31,7 +31,7 @@
         <div class="flex items-center">
           <img src="./assets/Group.png" alt="" class="h-[50px]" />
           <div class="ml-3">
-            <h2 class="font-bold">$<span>45000</span></h2>
+            <h2 class="font-bold">$<span id="available-balance">45000</span></h2>
             <p class="text-[#08080880]">Available Balance</p>
           </div>
         </div>
@@ -53,32 +53,40 @@
         </p>
       </div>
 
+      <!-- PAYOO option container -->
       <div class="min-h-[200px] grid grid-cols-3 gap-4 p-3 max-w-lg mx-auto">
+
+        <!-- Add Money -->
         <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
           <img src="./assets/wallet1.png" class="mx-auto" alt="" />
           <h2>Add Money</h2>
         </div>
 
+        <!-- Cashout -->
         <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
           <img src="./assets/send1.png" class="mx-auto" alt="" />
           <h2>Cashout</h2>
         </div>
 
+        <!-- Transfer Money -->
         <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
           <img src="./assets/money1.png" class="mx-auto" alt="" />
           <h2>Transfer Money</h2>
         </div>
 
+        <!-- Get Bonus -->
         <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
           <img src="./assets/bonus1.png" class="mx-auto" alt="" />
           <h2>Get Bonus</h2>
         </div>
 
+        <!-- Pay Bill -->
         <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
           <img src="./assets/purse1.png" class="mx-auto" alt="" />
           <h2>Pay Bill</h2>
         </div>
 
+        <!-- Transactions -->
         <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
           <img src="./assets/transaction1.png" class="mx-auto" alt="" />
           <h2>Transactions</h2>
@@ -87,7 +95,7 @@
     </div>
 
 
-    <!-- ADD MONEY -->
+    <!-- ADD MONEY CONTAINER -->
 
     <div class="all-from-section max-w-lg mx-auto pb-3">
       <div>
@@ -95,7 +103,7 @@
         <form action="" class="bg-white rounded-2xl p-8 m-4 ">
           <div class="mb-3">
             <h1 class="font-semibold text-[#080808b3]">Select A Bank</h1>
-            <select class="select bg-[#f4f5f7] mt-3  rounded-3xl w-full">
+            <select id="bank" class="select bg-[#f4f5f7] mt-3  rounded-3xl w-full">
               <option disabled selected>Select bank</option>
               <option>Standard Chartered Bank</option>
               <option>IFIC Bank</option>
@@ -105,21 +113,22 @@
           <div class="mb-3">
              <label class="font-semibold text-[#080808b3]" for="">Bank Account Number</label>
             <br>
-            <input type="text" placeholder="Enter 11 digit account number" id="mobile-number" class="input bg-[#f4f5f7] mt-3  rounded-3xl w-full" />
+            <input id="acount-number" type="text" placeholder="Enter 11 digit account number" id="mobile-number" class="input bg-[#f4f5f7] mt-3  rounded-3xl w-full" />
           </div>
           <div class="mb-3">
              <label class="font-semibold text-[#080808b3]" for="">Amount to Add</label>
             <br>
-            <input type="text" placeholder="Add Amount to withdraw" id="mobile-number" class="input bg-[#f4f5f7] mt-3  rounded-3xl w-full" />
+            <input id="add-amount" type="text" placeholder="Add Amount to withdraw" id="mobile-number" class="input bg-[#f4f5f7] mt-3  rounded-3xl w-full" />
           </div>
           <div class="mb-3">
              <label class="font-semibold text-[#080808b3]" for="">Pin Number</label>
             <br>
-            <input type="text" placeholder="Enter 4 digit pin number" id="mobile-number" class="input bg-[#f4f5f7] w-full mt-3  rounded-3xl" />
+            <input id="add-pin" type="text" placeholder="Enter 4 digit pin number" id="mobile-number" class="input bg-[#f4f5f7] w-full mt-3  rounded-3xl" />
           </div>
-          <button id="loginButton" class="btn bg-[#0874f2] text-white mt-5 w-full rounded-3xl">Add Money</button>
+          <button id="add-money-btn" class="btn bg-[#0874f2] text-white mt-5 w-full rounded-3xl">Add Money</button>
         </form>
       </div>
     </div>
+    <script src="js/home.js"></script>
   </body>
 </html>
